@@ -20,9 +20,9 @@ argument
 
 function numberOfOccurences (str, letter) {
 	let letterCounter = 0;
-	
+
 	for (let counter = 0; counter < str.length; counter++) {
-		if (str.charAt(counter) == letter) {
+		if (str.toLowerCase().charAt(counter) == letter.toLowerCase()) {
 			letterCounter += 1;
 		}
 	}
