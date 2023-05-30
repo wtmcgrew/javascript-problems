@@ -18,10 +18,6 @@ element on the webpage.
 */
 
 function hrefLink() {
-	let target = dcoument.createElement("a");
-	let textToLink = dcoument.toTextNode("ESPN.com");
-	target.appendChild(texToLink);
-	target.title = "ESPN";
-	target.href = "https://www.espn.com/";
-	document.body.appendChild(target);
+	document.getElementById("link").getAttribute("href");
+	document.getElementById("appear").innerHTML = "https://www.espn.com";
 }
