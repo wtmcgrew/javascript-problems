@@ -1,0 +1,27 @@
+<!-- Create an HTML page with a dropdown list with three items in it, 
+then write a JavaScript function that displays the number of items 
+and displays the item in the list when you select from the dropdown. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM: Problem 3</title>
+</head>
+<body>
+	<div>
+		<label for="creditcards">Choose a credit card:</label>
+
+		<select id="creditcards" onchange="creditCardList()">
+			<option value="chase">Chase</option>
+			<option value="amex">Amex</option>
+			<option value="citi">Citi</option>
+		</select>
+
+		<p id="choice"></p>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
