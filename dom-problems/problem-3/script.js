@@ -18,5 +18,19 @@ turn array into string to be displayed in HTML
 
 
 function creditCardList() {
+	const myCreditCards = document.getElementById("creditcards");	
 	
+	const numberOfItems = document.getElementById("creditcards").length;
+	console.log(numberOfItems);
+
+	const selectedItem = myCreditCards.options[myCreditCards.selectedIndex].value;
+
+	let stringOfItems = "";
+
+	for (let counter = 0; counter < myCreditCards.length; counter++) {
+		stringOfItems = stringOfItems + myCreditCards.options[counter].text + ", ";
+	}
+
+	document.getElementById("choice").innerHTML = stringOfItems;	
 }
+
