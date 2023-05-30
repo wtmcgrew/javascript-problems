@@ -18,6 +18,6 @@ element on the webpage.
 */
 
 function hrefLink() {
-	document.getElementById("link").getAttribute("href");
-	document.getElementById("appear").innerHTML = "https://www.espn.com";
+	const websiteUrl = document.getElementById("link").getAttribute("href");
+	document.getElementById("appear").innerHTML = websiteUrl;
 }
