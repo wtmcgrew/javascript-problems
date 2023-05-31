@@ -35,8 +35,6 @@ function longestWordLength (words) {
 	return longestWord
 }
 
-/*
+onsole.log(longestWordLength("Memorial Day is on May 29th"));
 
-console.log(longestWordLength("Memorial Day is on May 29th"));
-
-/* This will result in the answer of Memorial
+// This will result in the answer of Memorial
