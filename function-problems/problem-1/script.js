@@ -27,14 +27,14 @@ if array is greater than or equal to longestWord length method.
 function longestWordLength (words) {
 	let arrayOfWords = words.split(" ");
 	let longestWord = "";
-	for (i = 0; i < arrayOfWords.length; i++) {
-		if (arrayOfWords[i].length >= longestWord.length) {
-			longestWord = arrayOfWords[i];
+	for (let counter = 0; counter < arrayOfWords.length; counter++) {
+		if (arrayOfWords[counter].length >= longestWord.length) {
+			longestWord = arrayOfWords[counter];
 		}
 	}
 	return longestWord
 }
 
-onsole.log(longestWordLength("Memorial Day is on May 29th"));
+console.log(longestWordLength("Memorial Day is on May 29th"));
 
 // This will result in the answer of Memorial
