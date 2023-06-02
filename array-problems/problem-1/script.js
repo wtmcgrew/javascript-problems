@@ -21,10 +21,24 @@ Step 5: Create loop that includes array and number that will return the first
 const arrayOfDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const arrayOfItems = function (array, num) {
+	// Checks to see if the array or num parameters have a value 
 	if (array === null || num === null)  {
-		return "The input should be (array, number). Please try again";
+		return "The input should be (array, num). Please try again";
 	}
+	// Checks to see if the num entered is greater than 0
 	if (num < 0) {
 		return "Please enter a postive value for num and try again";
 	}
+	// Checks to see if the num entered is greater than length of the array
+	if (num > array.length) {
+		return "There are only " + array.length + " items. Please reenter";
+	}
+	// Runs code as long as the other conditional statements are not true
+	// Splice method at 0 statrs at first element of the array
+	return array.slice(0, num);
 }
+
+console.log(arrayOfItems(arrayOfDays, 5)); // Returns ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",]
+console.log(arrayOfItems(arrayOfDays, -4)); // Returns "Please enter a positive value for num and try again"
+console.log(arrayOfItems(arrayOfDays, 20)); // Returns "There are only 7 items. Please reenter"
+console.log(arrayOfItems(arrayOfDays, null)); // Returns "The input should be (array, num). PLease try again"
