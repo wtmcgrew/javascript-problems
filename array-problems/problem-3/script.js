@@ -20,7 +20,7 @@ function sortedNumbers (arr) {
 	/* Cpmparison function
 	Negative value means a will be before b
 	Positive value means b will be before a
-	If equal to 0 tthey will be right next to each otherr */
+	If equal to 0 they will be right next to each otherr */
 
 	return arrayOfNumbers.sort(function (a, b) {
 		return b - a; 
