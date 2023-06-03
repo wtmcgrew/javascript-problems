@@ -10,9 +10,20 @@ Step 2: Create a function that takes in an array as parameter
 Step 3: Find the correct property/method that can be used to separate
 into a string separated by a commaa
 
-Step 4: Set up conditional statements and use methods that may break code
+Step 4: Return value in block of function
 
-Step 5: Console log results
+Step 5: Console log and call function
 
 
 */
+
+let cars = ["Chrysler", "Dodge", "Jeep", "Fiat"];
+
+/* Test to see if program works with different array
+cars = ["Toyota", "Honda", "Hyundai", "Kia", "Mazda"]; */
+
+const stringOfElemnts = function (array) {
+	return array.join(", "); // toString method can be used but was instructed not to
+}
+
+console.log(stringOfElemnts(cars));
