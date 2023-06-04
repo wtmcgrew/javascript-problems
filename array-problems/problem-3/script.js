@@ -17,7 +17,7 @@ Step 4: Console log results
 const arrayOfNumbers = [8, 3, 2, 9, 4, 7, 1, 6, -9, 20];
 
 function sortedNumbers (arr) {
-	/* Cpmparison function
+	/* Comparison function
 	Negative value means a will be before b
 	Positive value means b will be before a
 	If equal to 0 they will be right next to each otherr */
