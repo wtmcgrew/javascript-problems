@@ -22,7 +22,7 @@ function sortedNumbers (arr) {
 	Positive value means b will be before a
 	If equal to 0 they will be right next to each otherr */
 
-	return arrayOfNumbers.sort(function (a, b) {
+	return arr.sort(function (a, b) {
 		return b - a; 
 	})
 }
