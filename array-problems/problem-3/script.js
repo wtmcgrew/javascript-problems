@@ -16,13 +16,13 @@ Step 4: Console log results
 
 const arrayOfNumbers = [8, 3, 2, 9, 4, 7, 1, 6, -9, 20];
 
-function sortedNumbers (arr) {
+function sortedNumbers (array) {
 	/* Comparison function
 	Negative value means a will be before b
 	Positive value means b will be before a
 	If equal to 0 they will be right next to each other */
 
-	return arr.sort(function (a, b) {
+	return array.sort(function (a, b) {
 		return b - a; 
 	})
 }
