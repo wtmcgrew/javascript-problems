@@ -24,8 +24,18 @@ function removeDuplicates (array) {
 
 
     for(let counter = 0; counter < array.length; counter++) {
-    	/*If new array does NOT (!) contain passed through array at counter,
-		add (push) new array element at counter*/
+    	/*
+        The following loops over each element of the array and 
+        adds to a new array only it tha element is not already
+        there
+
+        If new array does NOT (!) contain passed through array at counter,
+		add (push) new array element at counter
+
+        Push means to add new item at the end of the array
+
+
+        */
         if(!newArray.includes(array[counter])) {
             newArray.push(array[counter]);
         }
