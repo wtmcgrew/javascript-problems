@@ -19,8 +19,10 @@ Step 5: Console log and call function
 
 let cars = ["Chrysler", "Dodge", "Jeep", "Fiat"];
 
-/* Test to see if program works with different array
-cars = ["Toyota", "Honda", "Hyundai", "Kia", "Mazda"]; */
+/* 
+Test to see if program works with different array
+cars = ["Toyota", "Honda", "Hyundai", "Kia", "Mazda"]; 
+*/
 
 const stringOfElements = function (array) {
 	return array.join(", "); // toString method can be used but was instructed not to
