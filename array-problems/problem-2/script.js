@@ -25,6 +25,7 @@ cars = ["Toyota", "Honda", "Hyundai", "Kia", "Mazda"];
 */
 
 const stringOfElements = function (array) {
+	// join () method returns an array as a string
 	return array.join(", "); // toString method can be used but was instructed not to
 }
 
