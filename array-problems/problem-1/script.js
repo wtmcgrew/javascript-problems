@@ -34,7 +34,7 @@ const arrayOfItems = function (array, num) {
 		return "There are only " + array.length + " items. Please reenter";
 	}
 	// Runs code as long as the other conditional statements are not true
-	// Splice method at 0 statrs at first element of the array (slice returns selected element as new array)
+	// Slice method at 0 statrs at first element of the array (slice returns selected element as new array)
 	return array.slice(0, num);
 }
 
