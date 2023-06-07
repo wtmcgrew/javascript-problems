@@ -26,6 +26,6 @@ function deleteProperty (object, property) {{
 	// The delete operator deletes a property from an object
 	delete object[property]; // Could use .property if there were no arrays. Better to use bracket notation
 	return object;
-}}
+}
 
 console.log(deleteProperty(favArtist, "favSongs"));
