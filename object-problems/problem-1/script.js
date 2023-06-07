@@ -16,16 +16,17 @@ Step 5: Console log results
 */
 
 const favArtist = {
-	name: "Nas",
-	discography: 15,
-	favAlbum: "Hip Hop is Dead",
-	favSongs: ["I Gave You Power", "Made You Look", "One Mic", "Nas is Like"]
+    name: "Nas",
+    discography: 15,
+    favAlbum: "Hip Hop is Dead",
+    favSongs:["I Gave You Power", "Made You Look", "One Mic", "Nas is Like"]
 };
 
-function deleteProperty (object, property) {{
+
+function deleteProperty (object, property) {
 	// The delete operator deletes a property from an object
-	delete object[property]; // Could use .property if there were no arrays. Better to use bracket notation
-	return object;
+    delete object[property]; // Could use .property if there were no arrays. Better to use bracket notation
+    return object;
 }
 
 console.log(deleteProperty(favArtist, "favSongs"));
