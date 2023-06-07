@@ -40,8 +40,8 @@ const groupsOfPeople = [
 
 function onlyNames (objects) {
 	// forEach calls a function for each property in object
-	objects.forEach(function (identifier) {
-		console.log(identifier.firstName + " " + identifier.lastName);
+	objects.forEach(function (item) {
+		console.log(item.firstName + " " + item.lastName);
 	});
 }
 
