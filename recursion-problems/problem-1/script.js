@@ -24,7 +24,7 @@ function factorial (num) {
 		return 1; // The factorial of 1 will always be 1 (1 * 1 = 1); in mathematics the factorial of 0 is also 1
 	}
 	else {
-		return (num * factorial(num - 1)); 
+		return num * factorial(num - 1); 
 	}
 	/*
 	The number 6 will revert to else statement
